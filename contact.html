@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form-section">
+            <h2>Get In Touch</h2>
+            <p>Have questions or comments? Fill out the form below!</p>
+
+            <form id="contactForm" action="#" method="POST"> <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>Favorite Sonic Era?<br>
+                    <input type="radio" id="era_classic" name="fav_era" value="classic">
+                    <label for="era_classic">Classic (Genesis/Mega Drive)</label><br>
+                    <input type="radio" id="era_modern" name="fav_era" value="modern">
+                    <label for="era_modern">Modern (Dreamcast onwards)</label>
+                </p>
+
+                <p>What interests you?<br>
+                    <input type="checkbox" id="interest_games" name="interests" value="games">
+                    <label for="interest_games">Game Details</label><br>
+                    <input type="checkbox" id="interest_media" name="interests" value="media">
+                    <label for="interest_media">TV Shows/Movies</label><br>
+                     <input type="checkbox" id="interest_history" name="interests" value="history">
+                    <label for="interest_history">Sonic History</label>
+                </p>
+
+                <p>
+                    <label for="fav_char">Favorite Character:</label><br>
+                    <select id="fav_char" name="fav_char">
+                        <option value="">--Please choose an option--</option>
+                        <option value="sonic">Sonic</option>
+                        <option value="tails">Tails</option>
+                        <option value="knuckles">Knuckles</option>
+                        <option value="amy">Amy</option>
+                        <option value="shadow">Shadow</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</main>
+
+<footer>
+    <p>&copy; © SEGA. SEGA, the SEGA logo and SONIC THE HEDGEHOG are either registered trademarks or trademarks of SEGA Holdings Co., Ltd. or its affiliates. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office. All other trademarks, logos and copyrights are property of their respective owners.</p>
+    <p><a href="mailto:southdog16@gmail.com">Contact Us</a></p>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

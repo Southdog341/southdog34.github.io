@@ -1,0 +1,254 @@
+/* Collin Epley - styles.css */
+
+@font-face {
+    font-family: 'NiseSegaSonicFont';
+    src: url('../fonts/NiseSegaSonic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  
+
+  body {
+      font-family: 'NiseSegaSonicFont', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+ background-image: url('../images/green_hill_zone_background.jpg');
+ background-color: #0b6a9c;
+ background-repeat: no-repeat;
+ background-size: cover;       
+ background-position: center center;
+ background-attachment: fixed;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #3061e3; /* Sonic Blue */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Style for h1 element */
+h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for h2 element */
+h2 {
+    color: #e60000; /* Sonic Red */
+    border-bottom: 2px solid #ffd700; /* Sonic Gold */
+    padding-bottom: 5px;
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #da2528;
+    overflow: hidden; /* Clear floats or manage layout */
+    text-align: center;
+}
+
+nav li {
+   display: inline-block; /* Horizontal menu */
+}
+
+/* Style for nav a element */
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* Advanced CSS Technique: Transition for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for nav a:hover pseudo-class */
+nav a:hover {
+    background-color: #ffd700; /* Sonic Gold */
+    color: #333;
+}
+
+/* Main Content Area */
+main {
+    padding: 1rem 2rem;
+    max-width: 900px;
+    margin: 1rem auto; /* Center content */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style for p element */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Image Styling */
+.main-image {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 3px solid #0052a5;
+    border-radius: 8px;
+}
+
+.content-image {
+    max-width: 250px;
+    height: auto;
+    float: right; /* Example float */
+    margin: 0 0 1rem 1rem;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+}
+
+/* Table Styling */
+/* Style for table element */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Style for th, td elements */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for thead element */
+thead {
+    background-color: #0052a5; /* Sonic Blue */
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping */
+}
+
+/* Ordered List Styling */
+ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 1rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Styling */
+form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 95%; /* Adjust width as needed */
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #0052a5; /* Sonic Blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e60000; /* Sonic Red */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #da2528;
+    color: #fff;
+    font-size: 0.9em;
+}
+footer a {
+    color: #ffd700; /* Sonic Gold */
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav li {
+        display: block; /* Stack nav items vertically */
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Adjust font size */
+    }
+
+    .content-image {
+        float: none; /* Disable float */
+        display: block;
+        margin: 1rem auto; /* Center image */
+        max-width: 80%;
+    }
+
+    form input[type="text"],
+    form select,
+    form textarea {
+        width: 90%; /* Adjust form input width */
+    }
+}
